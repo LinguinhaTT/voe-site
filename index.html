@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VOE — Sites que decolam</title>
+  <meta name="description" content="A VOE cria o site da sua empresa e cuida dele todo mês: você pede, a gente atualiza.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230b0f1a'/%3E%3Cpath d='M14 18l18 30 18-30' fill='none' stroke='%23c6ff3d' stroke-width='7' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+</head>
+<body>
+
+<header class="topo" id="topo">
+  <div class="wrap topo__in">
+    <a href="#inicio" class="logo" aria-label="VOE — início">
+      <svg viewBox="0 0 40 28" aria-hidden="true"><path d="M3 4l17 20L37 4"/></svg>
+      <span>VOE</span>
+    </a>
+    <nav class="menu" id="menu">
+      <a href="#como">Como funciona</a>
+      <a href="#portfolio">Portfólio</a>
+      <a href="#planos">Planos</a>
+      <a href="#duvidas">Dúvidas</a>
+      <a href="#" class="btn btn--sm js-whats" data-msg="Olá, VOE! Quero um site para a minha empresa.">Falar com a VOE</a>
+    </nav>
+    <button class="burger" id="burger" aria-label="Abrir menu" aria-expanded="false"><span></span><span></span></button>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero" id="inicio">
+    <svg class="hero__rota" viewBox="0 0 1200 600" preserveAspectRatio="none" aria-hidden="true">
+      <path id="rota" d="M-40 520 C 240 520, 300 300, 560 330 S 900 120, 1240 60"/>
+    </svg>
+    <div class="aviao" aria-hidden="true">
+      <svg viewBox="0 0 24 24"><path d="M2 12l20-9-6 19-4-8-10-2z"/></svg>
+    </div>
+
+    <div class="wrap hero__in">
+      <p class="selo"><span class="ponto"></span> Sites para pequenas e médias empresas</p>
+      <h1>Seu site no ar.<br><em>E sempre em dia.</em></h1>
+      <p class="hero__sub">A VOE cria o site da sua empresa, entrega ele <strong>pronto e seu</strong>, e continua cuidando dele todo mês. Mudou preço, horário, foto ou serviço? Você pede e a gente atualiza.</p>
+      <div class="hero__cta">
+        <a href="#planos" class="btn">Ver planos</a>
+        <a href="#portfolio" class="btn btn--ghost">Ver sites que fizemos</a>
+      </div>
+      <ul class="hero__provas">
+        <li><strong>O site é seu</strong><span>sem aluguel do site</span></li>
+        <li><strong>Atualizações</strong><span>por mensalidade fixa</span></li>
+        <li><strong>Celular primeiro</strong><span>rápido em qualquer tela</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- COMO FUNCIONA -->
+  <section class="secao" id="como">
+    <div class="wrap">
+      <p class="kicker">Como funciona</p>
+      <h2>Três etapas. Uma decolagem.</h2>
+      <ol class="passos">
+        <li class="passo">
+          <span class="passo__n">01</span>
+          <h3>A gente cria</h3>
+          <p>Conversa rápida sobre o seu negócio, e a VOE desenha um site sob medida: textos, fotos, WhatsApp, mapa e tudo o que o seu cliente precisa ver.</p>
+        </li>
+        <li class="passo">
+          <span class="passo__n">02</span>
+          <h3>O site é seu</h3>
+          <p>Você paga a criação uma vez e o site passa a ser da sua empresa. Ele vai ao ar no seu domínio, com SSL e pronto para o Google.</p>
+        </li>
+        <li class="passo">
+          <span class="passo__n">03</span>
+          <h3>A gente mantém</h3>
+          <p>Com o plano mensal, é só mandar o que quer mudar. A VOE atualiza dentro do prazo do seu plano, sem orçamento novo a cada pedido.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- PORTFÓLIO -->
+  <section class="secao secao--escura" id="portfolio">
+    <div class="wrap">
+      <div class="cabeca">
+        <div>
+          <p class="kicker">Portfólio</p>
+          <h2>Sites que já estão no ar</h2>
+        </div>
+        <p class="cabeca__txt">Feitos sob medida para cada negócio. Clique em qualquer um para abrir o site de verdade.</p>
+      </div>
+      <div class="portfolio" id="lista-portfolio"></div>
+    </div>
+  </section>
+
+  <!-- PLANOS -->
+  <section class="secao" id="planos">
+    <div class="wrap">
+      <p class="kicker">Planos de manutenção</p>
+      <h2>Escolha o ritmo do seu site</h2>
+      <p class="intro">A criação do site é paga uma vez. Depois, você escolhe o plano que combina com quantas vezes o seu negócio muda.</p>
+
+      <div class="planos" id="lista-planos"></div>
+
+      <div class="criacao">
+        <div>
+          <h3>Criação do site</h3>
+          <p>Pagamento único, e o site fica com a sua empresa. O valor depende do tamanho do projeto: uma página, várias páginas, galeria, cardápio etc.</p>
+        </div>
+        <a href="#" class="btn js-whats" data-msg="Olá, VOE! Quero um orçamento para criar o site da minha empresa.">Pedir orçamento</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- O QUE ENTRA -->
+  <section class="secao secao--clara">
+    <div class="wrap duas">
+      <div>
+        <p class="kicker">O que conta como alteração</p>
+        <h2>Pequenas mudanças, feitas rápido</h2>
+        <ul class="check">
+          <li>Trocar textos, preços, horários e telefones</li>
+          <li>Trocar ou incluir fotos</li>
+          <li>Incluir ou remover um serviço, produto ou item do cardápio</li>
+          <li>Atualizar promoções e avisos (feriado, férias, evento)</li>
+          <li>Ajustar links de WhatsApp, Instagram e mapa</li>
+        </ul>
+      </div>
+      <div>
+        <p class="kicker">Cobrado à parte</p>
+        <h2>Projetos novos</h2>
+        <ul class="check check--x">
+          <li>Redesign completo do site</li>
+          <li>Funções novas: agendamento, loja virtual, área de login</li>
+          <li>Produção de fotos e vídeos profissionais</li>
+          <li>Gestão de tráfego pago e redes sociais</li>
+        </ul>
+        <p class="nota">Nesses casos, a VOE manda um orçamento antes de começar.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="secao" id="duvidas">
+    <div class="wrap estreito">
+      <p class="kicker">Dúvidas</p>
+      <h2>Perguntas frequentes</h2>
+      <div class="faq">
+        <details>
+          <summary>O site é meu mesmo?</summary>
+          <p>Sim. A criação é paga uma vez e o site pertence à sua empresa. A mensalidade é só pelo serviço de manutenção e atualização.</p>
+        </details>
+        <details>
+          <summary>E se eu cancelar o plano?</summary>
+          <p>O site continua seu e continua no ar. A VOE só deixa de fazer as atualizações. Se quiser, ajudamos a transferir a hospedagem para a sua conta.</p>
+        </details>
+        <details>
+          <summary>Como eu peço uma alteração?</summary>
+          <p>Pelo WhatsApp da VOE: mande o que quer mudar (texto, foto ou print). A gente confirma e entrega no prazo do seu plano.</p>
+        </details>
+        <details>
+          <summary>As alterações que eu não usar acumulam?</summary>
+          <p>Não. A cota de alterações renova todo mês e não passa para o mês seguinte.</p>
+        </details>
+        <details>
+          <summary>Quanto tempo leva para o site ficar pronto?</summary>
+          <p>Depende do tamanho do projeto. Um site de uma página costuma ficar pronto em poucos dias depois de recebermos as informações e fotos.</p>
+        </details>
+        <details>
+          <summary>Preciso ter domínio (www)?</summary>
+          <p>Não precisa ter antes. A VOE ajuda a registrar o domínio no nome da sua empresa e faz toda a configuração.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="final">
+    <div class="wrap final__in">
+      <h2>Pronto para decolar?</h2>
+      <p>Conte um pouco do seu negócio e a VOE responde com uma proposta.</p>
+      <a href="#" class="btn btn--grande js-whats" data-msg="Olá, VOE! Quero colocar minha empresa no ar.">Chamar no WhatsApp</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="rodape">
+  <div class="wrap rodape__in">
+    <a href="#inicio" class="logo logo--peq" aria-label="VOE — voltar ao início">
+      <svg viewBox="0 0 40 28" aria-hidden="true"><path d="M3 4l17 20L37 4"/></svg>
+      <span>VOE</span>
+    </a>
+    <p>Sites que decolam. © <span id="ano"></span> VOE</p>
+  </div>
+</footer>
+
+<a href="#" class="whats-flutuante js-whats" data-msg="Olá, VOE! Vim pelo site." aria-label="Falar no WhatsApp">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 00-8.6 15.1L2 22l5-1.3A10 10 0 1012 2zm0 18.2a8.2 8.2 0 01-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1112 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 01-3.3-2.9c-.3-.4.3-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 00-.7.3 3 3 0 00-.9 2.2 5.2 5.2 0 001.1 2.7 11.8 11.8 0 004.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 001.8-1.2 2.2 2.2 0 00.1-1.2c0-.1-.2-.2-.4-.3z"/></svg>
+</a>
+
+<script src="script.js"></script>
+</body>
+</html>
